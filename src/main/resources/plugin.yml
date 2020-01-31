@@ -1,0 +1,5 @@
+name: SurviveTheBurn
+version: ${project.version}
+main: de.blazepowered.survivetheburn.SurviveTheBurn
+api-version: 1.13
+authors: [MCMDEV, DevCyntrix]
