@@ -1,17 +1,19 @@
 package de.blazepowered.survivetheburn;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import java.util.Random;
 
-public final class SurviveTheBurn extends JavaPlugin {
+public interface SurviveTheBurn {
 
-    @Override
-    public void onEnable() {
-        // Plugin startup logic
+    Random RANDOM = new Random();
 
+    default STBGame createGame(String name) {
+        return createGame(RANDOM.nextLong(), name);
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
+    STBGame createGame(long id, String name);
+
+    STBGame getGame(long id);
+
+    STBGame deleteGame(long id);
+
 }
