@@ -1,5 +1,5 @@
 name: SurviveTheBurn
 version: ${project.version}
-main: de.blazepowered.survivetheburn.SurviveTheBurn
+main: de.blazepowered.survivetheburn.SurviveTheBurnPlugin
 api-version: 1.13
 authors: [MCMDEV, DevCyntrix]
